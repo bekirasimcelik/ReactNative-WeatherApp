@@ -4,6 +4,7 @@ import {View, Text, StyleSheet, Animated} from 'react-native';
 const WeatherScreen = () => {
   const [weather, setWeather] = useState({temperature: '', description: ''});
 
+
   const animatedValue = useMemo(() => new Animated.Value(0), []);
 
   useEffect(() => {
